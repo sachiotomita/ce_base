@@ -9,3 +9,9 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( community_engine.js )
+Rails.application.config.assets.precompile += %w( community_engine.css )
+Rails.application.config.assets.precompile += %w( tag-it/tag-it.css )
+Rails.application.config.assets.precompile += %w( tag-it/tag-it.js )
+Rails.application.config.assets.precompile += %w( tag-it/tagit.ui-zendesk.css )
+Rails.application.config.assets.precompile += %w( tag-it/tagit.ui-zendesk.js )
