@@ -1,18 +1,19 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'community_engine', :github => 'bborn/communityengine', :branch => "edge"
+gem 'community_engine', :github => 'sachiotomita/communityengine', :branch => "edge"
 #gem 'sprockets-rails','2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.7.1'
+gem 'rails', '4.2.9'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem "activerecord"
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -37,6 +38,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do
